@@ -38,7 +38,7 @@ Each repository is **completely independent** on GitHub. Clone only what you nee
 | 1 | **Git Basics & Daily Workflow** | [`git-practice-01-foundations`](https://github.com/TheCodeGarage/git-practice-01-foundations) | 🟢 Beginner |
 
 ```bash
-git clone https://github.com/TheCodeGarage/git-practice-foundations
+git clone https://github.com/TheCodeGarage/git-practice-01-foundations
 ```
 
 **Learn:** Setup, init, clone, add, commit, push, pull, basic branching, viewing history
@@ -57,8 +57,8 @@ git clone https://github.com/TheCodeGarage/git-practice-foundations
 
 ```bash
 # Clone specific topics you struggle with
-git clone https://github.com/TheCodeGarage/git-practice-merge-conflicts
-git clone https://github.com/TheCodeGarage/git-practice-rebasing
+git clone https://github.com/TheCodeGarage/git-practice-02-merge-conflicts
+git clone https://github.com/TheCodeGarage/git-practice-03-rebasing
 # etc...
 ```
 
@@ -73,9 +73,9 @@ git clone https://github.com/TheCodeGarage/git-practice-rebasing
 | 9 | **Debugging & Bisect** | [`git-practice-09-debugging-bisect`](https://github.com/TheCodeGarage/git-practice-09-debugging-bisect) | 🔴 Advanced |
 
 ```bash
-git clone https://github.com/TheCodeGarage/git-practice-branching-strategies
-git clone https://github.com/TheCodeGarage/git-practice-stash-cherry-pick
-git clone https://github.com/TheCodeGarage/git-practice-debugging-bisect
+git clone https://github.com/TheCodeGarage/git-practice-07-branching-strategies
+git clone https://github.com/TheCodeGarage/git-practice-08-stash-cherry-pick
+git clone https://github.com/TheCodeGarage/git-practice-09-debugging-bisect
 ```
 
 ---
@@ -118,17 +118,17 @@ npm run dev
 
 **New to Git?**
 ```bash
-git clone https://github.com/TheCodeGarage/git-practice-foundations
-cd git-practice-foundations
+git clone https://github.com/TheCodeGarage/git-practice-01-foundations
+cd git-practice-01-foundations
 ```
 
 **Struggle with specific topic?**
 ```bash
 # Merge conflicts
-git clone https://github.com/TheCodeGarage/git-practice-merge-conflicts
+git clone https://github.com/TheCodeGarage/git-practice-02-merge-conflicts
 
 # Rebasing
-git clone https://github.com/TheCodeGarage/git-practice-rebasing
+git clone https://github.com/TheCodeGarage/git-practice-03-rebasing
 
 # etc...
 ```
@@ -158,10 +158,10 @@ Aim for **80%+ score** before moving to next topic!
 Messed up? Just re-clone that specific repo:
 ```bash
 # Delete your working copy
-rm -rf git-practice-merge-conflicts
+rm -rf git-practice-02-merge-conflicts
 
 # Clone fresh
-git clone https://github.com/TheCodeGarage/git-practice-merge-conflicts
+git clone https://github.com/TheCodeGarage/git-practice-02-merge-conflicts
 
 # Your other repos remain untouched! ✅
 ```
@@ -210,13 +210,13 @@ Complete all 9 repositories in order:
 ```bash
 # You're working on multiple topics
 ~/practice/
-├── git-practice-foundations/       ✅ Completed
-├── git-practice-merge-conflicts/   🔄 In progress (exercise 8/12)
-└── git-practice-rebasing/          🔄 In progress (exercise 5/15)
+├── git-practice-01-foundations/       ✅ Completed
+├── git-practice-02-merge-conflicts/   🔄 In progress (exercise 8/12)
+└── git-practice-03-rebasing/          🔄 In progress (exercise 5/15)
 
 # Messed up rebasing? Re-clone just that one:
-rm -rf git-practice-rebasing
-git clone https://github.com/TheCodeGarage/git-practice-rebasing
+rm -rf git-practice-03-rebasing
+git clone https://github.com/TheCodeGarage/git-practice-03-rebasing
 
 # Your merge-conflicts progress is safe! ✅
 ```
@@ -276,8 +276,8 @@ Based on empirical data about what developers struggle with most, combined with 
 
 ### For Complete Beginners:
 ```bash
-git clone https://github.com/TheCodeGarage/git-practice-foundations
-cd git-practice-foundations
+git clone https://github.com/TheCodeGarage/git-practice-01-foundations
+cd git-practice-01-foundations
 cat README.md  # Start here!
 ```
 
