@@ -35,7 +35,7 @@ Each repository is **completely independent** on GitHub. Clone only what you nee
 
 | # | Topic | Repository | Difficulty |
 |---|-------|------------|------------|
-| 1 | **Git Basics & Daily Workflow** | [`git-practice-foundations`](https://github.com/TheCodeGarage/git-practice-foundations) | 🟢 Beginner |
+| 1 | **Git Basics & Daily Workflow** | [`git-practice-01-foundations`](https://github.com/TheCodeGarage/git-practice-01-foundations) | 🟢 Beginner |
 
 ```bash
 git clone https://github.com/TheCodeGarage/git-practice-foundations
@@ -49,11 +49,11 @@ git clone https://github.com/TheCodeGarage/git-practice-foundations
 
 | # | Topic | Repository | Difficulty |
 |---|-------|------------|------------|
-| 2 | **Merge Conflicts** | [`git-practice-merge-conflicts`](https://github.com/TheCodeGarage/git-practice-merge-conflicts) | 🟡 Intermediate |
-| 3 | **Rebasing** | [`git-practice-rebasing`](https://github.com/TheCodeGarage/git-practice-rebasing) | 🔴 Advanced |
-| 4 | **History Rewriting** | [`git-practice-history-rewriting`](https://github.com/TheCodeGarage/git-practice-history-rewriting) | 🔴 Advanced |
-| 5 | **Remote Workflows** | [`git-practice-remote-workflows`](https://github.com/TheCodeGarage/git-practice-remote-workflows) | 🟡 Intermediate |
-| 6 | **Recovery Operations** | [`git-practice-recovery-operations`](https://github.com/TheCodeGarage/git-practice-recovery-operations) | 🔴 Advanced |
+| 2 | **Merge Conflicts** | [`git-practice-02-merge-conflicts`](https://github.com/TheCodeGarage/git-practice-02-merge-conflicts) | 🟡 Intermediate |
+| 3 | **Rebasing** | [`git-practice-03-rebasing`](https://github.com/TheCodeGarage/git-practice-03-rebasing) | 🔴 Advanced |
+| 4 | **History Rewriting** | [`git-practice-04-history-rewriting`](https://github.com/TheCodeGarage/git-practice-04-history-rewriting) | 🔴 Advanced |
+| 5 | **Remote Workflows** | [`git-practice-05-remote-workflows`](https://github.com/TheCodeGarage/git-practice-05-remote-workflows) | 🟡 Intermediate |
+| 6 | **Recovery Operations** | [`git-practice-06-recovery-operations`](https://github.com/TheCodeGarage/git-practice-06-recovery-operations) | 🔴 Advanced |
 
 ```bash
 # Clone specific topics you struggle with
@@ -68,9 +68,9 @@ git clone https://github.com/TheCodeGarage/git-practice-rebasing
 
 | # | Topic | Repository | Difficulty |
 |---|-------|------------|------------|
-| 7 | **Branching Strategies** | [`git-practice-branching-strategies`](https://github.com/TheCodeGarage/git-practice-branching-strategies) | 🟢 Beginner |
-| 8 | **Stash & Cherry-Pick** | [`git-practice-stash-cherry-pick`](https://github.com/TheCodeGarage/git-practice-stash-cherry-pick) | 🟡 Intermediate |
-| 9 | **Debugging & Bisect** | [`git-practice-debugging-bisect`](https://github.com/TheCodeGarage/git-practice-debugging-bisect) | 🔴 Advanced |
+| 7 | **Branching Strategies** | [`git-practice-07-branching-strategies`](https://github.com/TheCodeGarage/git-practice-07-branching-strategies) | 🟢 Beginner |
+| 8 | **Stash & Cherry-Pick** | [`git-practice-08-stash-cherry-pick`](https://github.com/TheCodeGarage/git-practice-08-stash-cherry-pick) | 🟡 Intermediate |
+| 9 | **Debugging & Bisect** | [`git-practice-09-debugging-bisect`](https://github.com/TheCodeGarage/git-practice-09-debugging-bisect) | 🔴 Advanced |
 
 ```bash
 git clone https://github.com/TheCodeGarage/git-practice-branching-strategies
