@@ -26,7 +26,37 @@ This learning system is organized around **empirical research** from Stack Overf
 Rather than teaching Git linearly, we've designed **independent practice repositories** focused on these high-struggle areas. This approach aligns with learning science principles of **deliberate practice** - you can repeatedly tackle realistic scenarios in the exact areas where you need improvement, without losing progress elsewhere.
 
 Each repository contains 40-50 commits from fictional team members, creating authentic "messy" scenarios that mirror real-world development challenges. When you make mistakes (an essential part of learning!), simply re-clone that specific repository and try again.
+## 🚀 Recommended Setup
 
+**Clone all repositories into a common parent folder:**
+
+```bash
+# Create a dedicated folder
+mkdir ~/git-mastery
+cd ~/git-mastery
+
+# Clone the repositories you want to practice with
+git clone https://github.com/TheCodeGarage/git-mastery-00-hub
+git clone https://github.com/TheCodeGarage/git-mastery-quiz-game
+git clone https://github.com/TheCodeGarage/git-mastery-01-foundations
+# ... clone others as needed
+```
+
+**Why this structure?**
+- ✅ Easy navigation between repos (`cd ../git-mastery-quiz-game`)
+- ✅ All repos stay independent (reset one without affecting others)
+- ✅ Cross-references in documentation work correctly
+- ✅ Can clone just the topics you need
+
+**Your folder structure will look like:**
+```
+git-mastery/
+├── git-mastery-00-hub/
+├── git-mastery-quiz-game/
+├── git-mastery-01-foundations/
+├── git-mastery-02-merge-conflicts/
+└── ... (other repos as needed)
+```
 ## �📚 Practice Repositories
 
 Each repository is **completely independent** on GitHub. Clone only what you need, reset without losing progress in other repos!
@@ -303,4 +333,4 @@ Built with ❤️ for developers who want to truly master Git, based on empirica
 
 ---
 
-**Ready to master Git?** Start with [Getting Started](GETTING-STARTED.md) or jump into a [practice repository](practice-repos/)!
+**Ready to master Git?** Start with [Getting Started](GETTING-STARTED.md) or [browse all repositories](#-practice-repositories)!

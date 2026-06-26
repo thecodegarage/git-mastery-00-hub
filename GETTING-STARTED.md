@@ -65,47 +65,71 @@ Ask yourself:
 - 🟡 Intermediate: Repos 1, 4, 2, 3, 7
 - 🔴 Advanced: Repos 2, 3, 5, 8
 
-### Step 3: Set Up Your Practice Environment
+### Step 3: Clone All Repositories
 
-Create a dedicated workspace:
+**Recommended**: Clone all repositories into a common parent folder:
+
+```bash
+# Create a dedicated folder for all Git Mastery repos
+mkdir ~/git-mastery
+cd ~/git-mastery
+
+# Clone the repositories you want to practice with
+# Example: Clone hub, quiz, and merge conflicts practice
+git clone https://github.com/TheCodeGarage/git-mastery-00-hub
+git clone https://github.com/TheCodeGarage/git-mastery-quiz-game
+git clone https://github.com/TheCodeGarage/git-mastery-02-merge-conflicts
+# ... clone others as needed
+```
+
+**Why this structure?**
+- Navigate easily between repos using `cd ../`
+- Quiz game references work correctly
+- All repos stay independent (can reset one without affecting others)
+
+### Step 4: Optional - Create Practice Copies
+
+**Want to experiment safely?** Work in copies:
 
 ```bash
 # Create practice workspace
 mkdir ~/git-practice
 cd ~/git-practice
 
-# Copy the practice repo you want to work with
-# Example: Merge Conflicts
-cp -r /path/to/git-mastery-and-practice/practice-repos/01-merge-conflicts .
-cd 01-merge-conflicts
+# Copy a repo you want to experiment with
+cp -r ~/git-mastery/git-mastery-02-merge-conflicts .
+cd git-mastery-02-merge-conflicts
 ```
 
-**Important**: Work in a COPY, not the original! This way you can always reset.
+**Important**: Work in a COPY if you want to experiment freely. The original stays clean for reference!
 
 ## Understanding the Structure
 
-### Main Folder Structure
+### Recommended Folder Structure
+
+Clone all repositories into a common parent folder:
 
 ```
-git-mastery-and-practice/
-├── README.md                    # You are here - main navigation
-├── GETTING-STARTED.md          # This file - detailed guide
-├── quiz-game/                  # Interactive quiz application
-└── practice-repos/             # 8 independent repositories
-    ├── 01-merge-conflicts/
-    ├── 02-rebasing/
-    ├── 03-history-rewriting/
-    ├── 04-remote-workflows/
-    ├── 05-recovery-operations/
-    ├── 06-branching-strategies/
-    ├── 07-stash-cherry-pick/
-    └── 08-debugging-bisect/
+git-mastery/                           # Your parent folder
+├── git-mastery-00-hub/               # This hub - main navigation
+├── git-mastery-quiz-game/            # Interactive quiz application
+├── git-mastery-01-foundations/       # Git basics practice
+├── git-mastery-02-merge-conflicts/   # Merge conflict practice
+├── git-mastery-03-rebasing/          # Rebasing practice
+├── git-mastery-04-history-rewriting/ # History editing practice
+├── git-mastery-05-remote-workflows/  # Remote operations practice
+├── git-mastery-06-recovery-operations/ # Recovery practice
+├── git-mastery-07-branching-strategies/ # Branching practice
+├── git-mastery-08-stash-cherry-pick/ # Stash & cherry-pick practice
+└── git-mastery-09-debugging-bisect/  # Debugging practice
 ```
+
+**All repositories are independent** - each is its own GitHub repo with complete Git history!
 
 ### Inside Each Practice Repository
 
 ```
-01-merge-conflicts/
+git-mastery-02-merge-conflicts/
 ├── .git/                       # Git repository data
 ├── README.md                   # Topic overview & objectives
 ├── EXERCISES.md                # Hands-on practice exercises
@@ -117,12 +141,12 @@ git-mastery-and-practice/
 
 ## Your First Practice Session
 
-### 1. Pick a Repository
+### 1. Navigate to a Repository
 
 Let's start with **Merge Conflicts** as an example:
 
 ```bash
-cd practice-repos/01-merge-conflicts
+cd ~/git-mastery/git-mastery-02-merge-conflicts
 ```
 
 ### 2. Read the README
@@ -195,7 +219,7 @@ Compare your approach with the provided solution.
 After completing all exercises in a repository:
 
 ```bash
-cd ../../quiz-game
+cd ../git-mastery-quiz-game
 npm install    # First time only
 npm run dev
 ```
@@ -276,15 +300,15 @@ git clean -fd
 # Now back to original state
 ```
 
-**Option 2: Re-Copy Original**
+**Option 2: Re-Clone Repository**
 ```bash
-# Delete your working copy
-cd ~/git-practice
-rm -rf 01-merge-conflicts
+# Delete the repository
+cd ~/git-mastery
+rm -rf git-mastery-02-merge-conflicts
 
-# Copy fresh from original
-cp -r /path/to/git-mastery-and-practice/practice-repos/01-merge-conflicts .
-cd 01-merge-conflicts
+# Clone fresh from GitHub
+git clone https://github.com/TheCodeGarage/git-mastery-02-merge-conflicts
+cd git-mastery-02-merge-conflicts
 ```
 
 **Option 3: Use Git to Reset**
@@ -299,12 +323,13 @@ git reset --hard <original-commit>
 ### Completely Start Over?
 
 ```bash
-# Delete all your practice work
-rm -rf ~/git-practice
+# Delete all repositories
+rm -rf ~/git-mastery
 
-# Start fresh
-mkdir ~/git-practice
-# Copy repositories again
+# Start fresh - clone again from GitHub
+mkdir ~/git-mastery
+cd ~/git-mastery
+# Clone repositories you need
 ```
 
 ## Troubleshooting
@@ -331,10 +356,10 @@ ls -la
 
 # Verify you're in the right directory
 pwd
-# Should end with: /practice-repos/XX-topic-name/
+# Should end with: /git-mastery-XX-topic-name/
 
-# Navigate correctly
-cd /path/to/git-mastery-and-practice/practice-repos/01-merge-conflicts
+# Navigate to repository
+cd ~/git-mastery/git-mastery-02-merge-conflicts
 ```
 
 ### Merge Conflicts Stuck?
@@ -413,16 +438,16 @@ git <command> -h
 Ready to start? Pick your path:
 
 ### 🟢 Beginner
-Start here: [Branching Strategies](practice-repos/06-branching-strategies/README.md)
+Start here: [Foundations](../git-mastery-01-foundations/README.md) or [Branching Strategies](../git-mastery-07-branching-strategies/README.md)
 
 ### 🟡 Intermediate
-Start here: [Merge Conflicts](practice-repos/01-merge-conflicts/README.md)
+Start here: [Merge Conflicts](../git-mastery-02-merge-conflicts/README.md)
 
 ### 🔴 Advanced
-Start here: [Rebasing](practice-repos/02-rebasing/README.md)
+Start here: [Rebasing](../git-mastery-03-rebasing/README.md) or [History Rewriting](../git-mastery-04-history-rewriting/README.md)
 
 ### 🎯 Targeted Practice
-Jump to: [Choose from Main README](README.md#practice-repositories)
+Jump to: [Choose from Main README](README.md#-practice-repositories)
 
 ---
 
